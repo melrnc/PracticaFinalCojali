@@ -40,7 +40,7 @@ tr:hover {
 #imagenPrincipal {
     display: block;
     margin: auto;
-     margin-top: 60px; /*Espacio entre la imagen y la tabla */
+    margin-top: 60px; /*Espacio entre la imagen y la tabla */
     margin-bottom: 60px;
     max-width: 100%; /* Para que la imagen sea responsive */
 }

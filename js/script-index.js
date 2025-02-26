@@ -57,20 +57,20 @@ async function initMethod(){ //Este metodo sirve para obtener el token de spotif
     getSpotifyToken().then(resultado => {
         getArtist(resultado).then(respuestaLlamadaArtist => {
             
-            let titulopagina = document.getElementById("nombreArtista");
-            titulopagina.innerHTML = respuestaLlamadaArtist.name;
+            let nombreArtistaElement = document.getElementById("nombreArtista");
+            nombreArtistaElement.innerHTML = respuestaLlamadaArtist.name;
 
-            let popularidad = document.getElementById("popularidadArtista");
-            popularidad.innerHTML = respuestaLlamadaArtist.popularity;
+            let popularidadArtistaElement = document.getElementById("popularidadArtista");
+            popularidadArtistaElement.innerHTML = respuestaLlamadaArtist.popularity;
 
-            let linkartista = document.getElementById("linkArtista");
-            linkartista.href = respuestaLlamadaArtist.external_urls.spotify;
+            let linkArtistaElement = document.getElementById("linkArtista");
+            linkArtistaElement.href = respuestaLlamadaArtist.external_urls.spotify;
 
-            let followersartista = document.getElementById("followers");
-            followersartista.innerHTML = respuestaLlamadaArtist.followers.total;
+            let followersArtistaElement = document.getElementById("followers");
+            followersArtistaElement.innerHTML = respuestaLlamadaArtist.followers.total;
 
-            let imgagenPrincipal = document.getElementById("imagenPrincipal");
-            imgagenPrincipal.src = respuestaLlamadaArtist.images[0].url;
+            let imgagenPrincipalElement = document.getElementById("imagenPrincipal");
+            imgagenPrincipalElement.src = respuestaLlamadaArtist.images[0].url;
         });
     });  
 }
