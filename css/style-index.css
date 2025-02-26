@@ -6,7 +6,7 @@ table {
     color: white;
     border-radius: 10px; /* Bordes redondeados */
     overflow: hidden; /* Para que el border-radius funcione en la tabla */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de elevación */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para que haga efecto de elevarse */
 }
 
 th, td {
@@ -31,7 +31,7 @@ a:hover {
 }
 
 tr:hover {
-    background-color: #282828; /* Oscurece la fila al pasar el mouse */
+    background-color: #282828; /* Oscurece la fila al pasar el ratón */
     transition: background-color 0.3s ease;
 }
 
@@ -40,7 +40,7 @@ tr:hover {
 #imagenPrincipal {
     display: block;
     margin: auto;
-    margin-top: 60px; /* Espacio entre la imagen y la tabla */
+     margin-top: 60px; /*Espacio entre la imagen y la tabla */
     margin-bottom: 60px;
     max-width: 100%; /* Para que la imagen sea responsive */
 }
