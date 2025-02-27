@@ -16,7 +16,7 @@
 }
 
 .album-item:hover {
-    transform: scale(1.05); /* Efecto al pasar el ratón */
+    transform: scale(1.05); /* Efecto elevarse al pasar el ratón */
 }
 
 .album-item img {

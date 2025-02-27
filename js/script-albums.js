@@ -30,7 +30,7 @@ async function getSpotifyToken() {
 }
 
 async function getArtistsAlbums(token) {
-    const url = 'https://api.spotify.com/v1/artists/1va3Zo4O6kJSYZ40c8D0Ag/albums';
+    const url = 'https://api.spotify.com/v1/artists/51yyeVxyvecgePAWXmeLUE/albums';
 
     try {
         const response = await fetch(url, {
@@ -55,9 +55,9 @@ async function getArtistsAlbums(token) {
 
 async function initMethod(){ //Este metodo sirve para obtener el token de spotify y almacena el resultado en "miParrafo" 
     getSpotifyToken().then(resultado => {
-        getArtistsAlbums(resultado).then(respuestaLlamadaArtist => {
+        getArtistsAlbums(resultado).then(respuestaLlamadaArtistsAlbums => {
 
-            displayAlbums(respuestaLlamadaArtist.items); //dentro del Array "items" están todos los singles, albums y ep del artista
+            displayAlbums(respuestaLlamadaArtistsAlbums.items); //dentro del Array "items" están todos los singles, albums y ep del artista
 
         });
     });  

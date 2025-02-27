@@ -30,7 +30,7 @@ async function getSpotifyToken() {
 }
 
 async function getArtist(token) {
-    const url = 'https://api.spotify.com/v1/artists/1va3Zo4O6kJSYZ40c8D0Ag';
+    const url = 'https://api.spotify.com/v1/artists/51yyeVxyvecgePAWXmeLUE';
 
     try {
         const response = await fetch(url, {
