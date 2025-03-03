@@ -1,3 +1,14 @@
+#imagenPrincipal {
+    display: block;
+    margin: auto;
+    margin-top: 30px; /*Espacio entre la imagen y la tabla */
+    margin-bottom: 30px;
+    max-width: 100%; /* Para que la imagen sea responsive */
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    border-radius: 50%; 
+}
+
 /* Estilos para la tabla del index */
 table {
     width: 50%;
@@ -5,7 +16,7 @@ table {
     margin: auto;
     color: white;
     border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Para que el border-radius funcione en la tabla */
+    /* overflow: hidden; Para que el border-radius funcione en la tabla */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para que haga efecto de elevarse */
 }
 
@@ -37,10 +48,4 @@ tr:hover {
 
 /* Terminan los estilos de la tabla del index */
 
-#imagenPrincipal {
-    display: block;
-    margin: auto;
-    margin-top: 60px; /*Espacio entre la imagen y la tabla */
-    margin-bottom: 60px;
-    max-width: 100%; /* Para que la imagen sea responsive */
-}
+

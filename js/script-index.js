@@ -60,6 +60,12 @@ async function initMethod(){ //Este metodo sirve para obtener el token de spotif
             let nombreArtistaElement = document.getElementById("nombreArtista");
             nombreArtistaElement.innerHTML = respuestaLlamadaArtist.name;
 
+            let tipoArtistaElement = document.getElementById("tipoArtista");
+            tipoArtistaElement.innerHTML = respuestaLlamadaArtist.type;
+
+            let generoArtistaElement = document.getElementById("generoArtista");
+            generoArtistaElement.innerHTML = respuestaLlamadaArtist.genres;
+
             let popularidadArtistaElement = document.getElementById("popularidadArtista");
             popularidadArtistaElement.innerHTML = respuestaLlamadaArtist.popularity;
 

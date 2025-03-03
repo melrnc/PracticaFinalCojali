@@ -1,7 +1,10 @@
 #albums-container{
-    display: -webkit-inline-box;
-    overflow-x: auto;
-    width: -webkit-fill-available;
+    display: grid;  /* Alinea verticalmente las tarjetas */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta las columnas automáticamente */
+    gap: 20px; /* Espacio entre las cards */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .album-item {
@@ -10,9 +13,8 @@
     border-radius: 10px;
     text-align: center;
     padding: 15px;
-    margin: 15px;
     transition: transform 0.2s ease-in-out;
-    width: fit-content;
+    width: 200px; /* Tamaño fijo para dar uniformidad */
 }
 
 .album-item:hover {
@@ -20,9 +22,9 @@
 }
 
 .album-item img {
-    width: 100%;
+    width: 150px;
     max-height: 180px;
-    object-fit: contain;
+    object-fit: cover; /* Hace que las imágenes llenen el espacio */ 
     border-radius: 10px;
 }
 
@@ -40,7 +42,7 @@
 .album-item a {
     display: block;
     margin-top: 5px;
-    padding: 5px;
+    padding: 8px;
     background: #1DB954;
     color: white;
     text-decoration: none;

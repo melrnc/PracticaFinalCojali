@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica Final</title>
-    <link rel="stylesheet" href="css/style.css" href="css/style-index.css"/><!--Ruta al CSS y al específico-->
+    <title>Artist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="css/style-index.css"/><!--Ruta al CSS y al específico-->
 </head>
 <body>
     <nav>
@@ -16,33 +17,37 @@
     </nav>
     
     <section id="index.html">
-        <h1 id="nombreArtista"></h1>
         <p id="eslogan">Artista favorito de la semana</p>
+        <h1 id="nombreArtista"></h1>
+        <img id="imagenPrincipal">
         <table id="artist-info">
             <tbody>
+                <tr>
+                    <td><strong>Tipo:</strong></td>
+                    <td id="tipoArtista"></td>
+                </tr>
+                <tr>
+                    <td><strong>Género:</strong></td>
+                    <td id="generoArtista"></td>
+                </tr>
                 <tr>
                     <td><strong>Popularidad:</strong></td>
                     <td id="popularidadArtista"></td>
                 </tr>
                 <tr>
-                    <td><strong>Followers:</strong></td>
+                    <td><strong>Número de seguidores:</strong></td>
                     <td id="followers"></td>
                 </tr>
                 <tr>
-                    <td><strong>Perfil del artista:</strong></td>
+                    <td><strong>Perfil en Spotify:</strong></td>
                     <td><a id="linkArtista" href="#" target="_blank">Escuchar en Spotify</a></td>
                 </tr>
             </tbody>
         </table>
-
-       
-        <img id="imagenPrincipal">
-
     </section>
     <footer>
         <p> &copy; 2025 Desarrollado por Melody Rincón Abengózar</p>
     </footer>
     <script src="js/script-index.js"></script> <!--Ruta al archivo JS-->
-
 </body>
 </html>

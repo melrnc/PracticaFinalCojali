@@ -12,7 +12,7 @@
     padding: 15px;
     margin: 15px;
     transition: transform 0.2s ease-in-out;
-    width: fit-content;
+    width: 250px; /* Tamaño fijo para dar uniformidad */
 }
 
 .album-item:hover {
@@ -20,9 +20,9 @@
 }
 
 .album-item img {
-    width: 100%;
+    width: 200px;
     max-height: 180px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -37,6 +37,7 @@
     margin: 5px 0;
 }
 
+/* Botón enlace */
 .album-item a {
     display: block;
     margin-top: 5px;
