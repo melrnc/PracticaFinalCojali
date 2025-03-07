@@ -1,9 +1,8 @@
 async function getSpotifyToken() {
-    const clientId = 'a88483ba62924d0a83ef58a1b1e576c8';     // Reemplaza con tu Client ID
-    const clientSecret = 'd5c4ec9b5ada44db8617ce32d33f2ec3'; // Reemplaza con tu Client Secret
+    const clientId = 'a88483ba62924d0a83ef58a1b1e576c8';     
+    const clientSecret = 'd5c4ec9b5ada44db8617ce32d33f2ec3'; 
     const url = 'https://accounts.spotify.com/api/token';
 
-    // Convierte las credenciales a Base64
     const credentials = btoa(`${clientId}:${clientSecret}`);
 
     try {
@@ -53,7 +52,7 @@ async function getArtist(token) {
     }
 }
 
-async function initMethod(){ //Este metodo sirve para obtener el token de spotify y almacena el resultado en "miParrafo" 
+async function initMethod(){ 
     getSpotifyToken().then(resultado => {
         getArtist(resultado).then(respuestaLlamadaArtist => {
             

@@ -1,9 +1,8 @@
 async function getSpotifyToken() {
-    const clientId = 'a88483ba62924d0a83ef58a1b1e576c8';     // Reemplaza con tu Client ID
-    const clientSecret = 'd5c4ec9b5ada44db8617ce32d33f2ec3'; // Reemplaza con tu Client Secret
+    const clientId = 'a88483ba62924d0a83ef58a1b1e576c8';     
+    const clientSecret = 'd5c4ec9b5ada44db8617ce32d33f2ec3'; 
     const url = 'https://accounts.spotify.com/api/token';
 
-    // Convierte las credenciales a Base64
     const credentials = btoa(`${clientId}:${clientSecret}`);
 
     try {
@@ -53,11 +52,11 @@ async function getTopTracks(token) {
     }
 }
 
-async function initMethod(){ //Este metodo sirve para obtener el token de spotify y almacena el resultado en "miParrafo" 
+async function initMethod(){ 
     getSpotifyToken().then(resultado => {
         getTopTracks(resultado).then(respuestaLlamadaArtistsTopTracks => {
 
-            displayTopTracks(respuestaLlamadaArtistsTopTracks.tracks); //dentro del Array "tracks" están las canciones del artista
+            displayTopTracks(respuestaLlamadaArtistsTopTracks.tracks); 
 
         });
     });  
@@ -65,18 +64,17 @@ async function initMethod(){ //Este metodo sirve para obtener el token de spotif
 
 function displayTopTracks(tracks) {
     const tracksContainer = document.getElementById('albums-container'); 
-    tracksContainer.innerHTML = ''; // Limpia contenido anterior por si hubiera código de antes
+    tracksContainer.innerHTML = ''; 
  
-    if (!tracks || tracks.length === 0) { // si "tracks" esta vacío o tiene una length = 0
-        tracksContainer.innerHTML = '<p>No se encontraron canciones.</p>'; //mete ese mensaje
+    if (!tracks || tracks.length === 0) { 
+        tracksContainer.innerHTML = '<p>No se encontraron canciones.</p>'; 
         return;
     }
 
-    tracks.forEach(track => { //bucle de tracks, recorre cada registro de track y mete "div" por cada track 
-        const trackElement = document.createElement('div'); //creación del div
+    tracks.forEach(track => { 
+        const trackElement = document.createElement('div'); 
         trackElement.classList.add('album-item'); 
 
-        // La ` muestra lo que esté entre las dos `´, en este caso añadimos un elemento dinámico 
         let albumElementContent = '';
         albumElementContent += '<img src="' + track.album.images[0]?.url + '" alt="' + track.name + '"></img>';
         albumElementContent += '<h3>' + track.name + '</h3>';

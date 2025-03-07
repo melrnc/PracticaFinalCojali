@@ -17,7 +17,7 @@ nav, footer {
     color: white;
     display: flex; 
     justify-content: space-around; 
-    align-items: center; /* Centra los elementos verticalmente */
+    align-items: center; 
     padding: 1%; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,7 +40,7 @@ nav a {
     padding: 10px 15px; 
     border-radius: 5px; 
     transition: background-color 0.3s ease;
-    font-weight: normal; /* Evita que se ponga en negrita */
+    font-weight: normal; 
 }
 
 nav a:hover {
@@ -67,7 +67,7 @@ h1, h2 {
     font-weight: bold;
     color: #1DB954;
     text-align: center;
-    text-shadow: 0px 0px 7px rgba(29, 185, 84, 0.8); /* Brillo alrededor */
+    text-shadow: 0px 0px 7px rgba(29, 185, 84, 0.8); 
     padding: 20px 0;
 }
 

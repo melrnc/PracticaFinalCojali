@@ -12,11 +12,11 @@
     padding: 15px;
     margin: 15px;
     transition: transform 0.2s ease-in-out;
-    width: 250px; /* Tamaño fijo para dar uniformidad */
+    width: 250px; 
 }
 
 .album-item:hover {
-    transform: scale(1.05); /* Efecto elevarse al pasar el ratón */
+    transform: scale(1.05); 
 }
 
 .album-item img {

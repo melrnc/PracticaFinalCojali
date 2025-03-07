@@ -1,7 +1,7 @@
 #albums-container{
-    display: grid;  /* Alinea verticalmente las tarjetas */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta las columnas automáticamente */
-    gap: 20px; /* Espacio entre las cards */
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; 
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -14,17 +14,17 @@
     text-align: center;
     padding: 15px;
     transition: transform 0.2s ease-in-out;
-    width: 200px; /* Tamaño fijo para dar uniformidad */
+    width: 200px; 
 }
 
 .album-item:hover {
-    transform: scale(1.05); /* Efecto elevarse al pasar el ratón */
+    transform: scale(1.05); 
 }
 
 .album-item img {
     width: 150px;
     max-height: 180px;
-    object-fit: cover; /* Hace que las imágenes llenen el espacio */ 
+    object-fit: cover; 
     border-radius: 10px;
 }
 

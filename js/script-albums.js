@@ -1,9 +1,8 @@
 async function getSpotifyToken() {
-    const clientId = 'a88483ba62924d0a83ef58a1b1e576c8';     // Reemplaza con tu Client ID
-    const clientSecret = 'd5c4ec9b5ada44db8617ce32d33f2ec3'; // Reemplaza con tu Client Secret
+    const clientId = 'a88483ba62924d0a83ef58a1b1e576c8';     
+    const clientSecret = 'd5c4ec9b5ada44db8617ce32d33f2ec3'; 
     const url = 'https://accounts.spotify.com/api/token';
 
-    // Convierte las credenciales a Base64
     const credentials = btoa(`${clientId}:${clientSecret}`);
 
     try {
@@ -53,11 +52,11 @@ async function getArtistsAlbums(token) {
     }
 }
 
-async function initMethod(){ //Este metodo sirve para obtener el token de spotify y almacena el resultado en "miParrafo" 
+async function initMethod(){ 
     getSpotifyToken().then(resultado => {
         getArtistsAlbums(resultado).then(respuestaLlamadaArtistsAlbums => {
 
-            displayAlbums(respuestaLlamadaArtistsAlbums.items); //dentro del Array "items" están todos los singles, albums y ep del artista
+            displayAlbums(respuestaLlamadaArtistsAlbums.items); 
 
         });
     });  
@@ -65,18 +64,17 @@ async function initMethod(){ //Este metodo sirve para obtener el token de spotif
 
 function displayAlbums(albums) {
     const albumsContainer = document.getElementById('albums-container'); 
-    albumsContainer.innerHTML = ''; // Limpia contenido anterior por si hubiera código de antes
+    albumsContainer.innerHTML = ''; 
  
-    if (!albums || albums.length === 0) { // si "albums" es vacío o tiene una length = 0
-        albumsContainer.innerHTML = '<p>No se encontraron álbumes.</p>'; //mete ese mensaje
+    if (!albums || albums.length === 0) {
+        albumsContainer.innerHTML = '<p>No se encontraron álbumes.</p>'; 
         return;
     }
 
-    albums.forEach(album => { //bucle de albums, recorre cada registro de album y mete "div" por cada album 
-        const albumElement = document.createElement('div'); //creación del div
+    albums.forEach(album => { 
+        const albumElement = document.createElement('div'); 
         albumElement.classList.add('album-item'); 
 
-        // La ` muestra lo que esté entre las dos `´, en este caso añadimos un elemento dinámico 
         let albumElementContent = '';
         albumElementContent += '<img src="' + album.images[0]?.url + '" alt="' + album.name + '"></img>';
         albumElementContent += '<h3>' + album.name + '</h3>';
