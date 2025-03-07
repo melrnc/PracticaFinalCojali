@@ -19,3 +19,6 @@ Durante el desarrollo de este proyecto, he trabajado con las siguientes tecnolog
 
 3. Despliegue  
 Puedes probar la página en el siguiente enlace: [Enlace al proyecto](https://practica-final-cojali-ivory.vercel.app/)
+
+4. Vídeo explicativo
+Aquí puedes ver un vídeo que explica cómo ha sido el desarrollo de esta página web: 
