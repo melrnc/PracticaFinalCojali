@@ -20,7 +20,7 @@ nav {
     align-items: center; 
     padding: 1%; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul {
@@ -78,4 +78,5 @@ footer {
     color: white;
     text-align: center;
     padding: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
